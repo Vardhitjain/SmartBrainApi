@@ -39,16 +39,7 @@ app.get('/profile/:id',(req,res)=>{profile.handleProfile(req,res,db)})
 app.put('/image',(req,res)=>{image.handleImage(req,res,db)})
 
 app.post('/imageurl',(req,res)=>{image.handleApiCall(req,res)})
-// bcrypt.hash("bacon", null, null, function(err, hash) {
-//     // Store hash in your password DB.
-// });
 
-
-//  bcrypt.hash(password, null, null, function(err, hash) {
-//     // Store hash in your password DB.
-//     console.log(hash)
-// });
-
-app.listen(process.env.PORT||8080,()=>{
+app.listen(process.env.PORT||44789,()=>{
   console.log(`Running on port ${process.env.PORT}`);
 })
